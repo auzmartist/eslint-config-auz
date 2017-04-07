@@ -23,6 +23,7 @@ const repoFiles = [
 	'index.js',
 	'test\\test.js',
 ];
+const slashRegex = /[\/\\]+/g;
 
 // Use the rules defined in this repo to test against.
 const eslintOpts = {
@@ -33,8 +34,12 @@ const eslintOpts = {
 
 // Runs the linter on the repo files and asserts no errors were found.
 const report = new eslint.CLIEngine(eslintOpts).executeOnFiles(repoFiles);
+report.results.forEach((r) => r.messages.forEach((m) => console.log(m)));
+
 assert.equal(report.errorCount, 0);
 assert.equal(report.warningCount, 0);
 repoFiles.forEach((file, index) => {
-	assert(report.results[index].filePath.endsWith(file));
+	let slashlessFile = file.replace(slashRegex, '_');
+	let filePath = report.results[index].filePath.replace(slashRegex, '_');
+	assert(filePath.endsWith(slashlessFile));
 });
