@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-google",
-  "version": "0.7.1",
-  "description": "ESLint shareable config for the Google style",
+  "name": "eslint-config-auz",
+  "version": "1.0.0",
+  "description": "ESLint shareable based on the  Google style",
   "license": "Apache-2.0",
-  "repository": "google/eslint-config-google",
-  "author": "Google",
+  "repository": "auzmartist/eslint-config-auz",
+  "author": "Austin Martin",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -15,6 +15,7 @@
     "index.js"
   ],
   "keywords": [
+    "auzmartist",
     "google",
     "code",
     "quality",
