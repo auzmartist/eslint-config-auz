@@ -1,4 +1,4 @@
-# eslint-config-auz [![Build Status](https://travis-ci.org/auzmartist/eslint-config-auz.svg?branch=master)](https://travis-ci.org/auzmartist/eslint-config-auz)
+# eslint-config-auz [![Build Status](https://travis-ci.org/auzmartist/eslint-config-auz.svg?branch=master)] [![npm version](https://badge.fury.io/js/eslint-config-auz.svg)](https://badge.fury.io/js/eslint-config-auz)
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for the [Google JavaScript style guide on which this is based](https://google.github.io/styleguide/jsguide.html)
 
