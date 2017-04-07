@@ -8,10 +8,10 @@ Once the `eslint-config-auz` package is installed, you can use it by specifying 
 
 ```js
 {
-  "extends": "auz",
-  "rules": {
-    // Additional, per-project rules...
-  }
+	"extends": "auz",
+	"rules": {
+		// Additional, per-project rules...
+	}
 }
 ```
 
@@ -23,10 +23,10 @@ To use this style in conjunction with ESLint's recommended rule set, extend them
 
 ```js
 {
-  "extends": ["eslint:recommended", "auz"],
-  "rules": {
-    // Additional, per-project rules...
-  }
+	"extends": ["eslint:recommended", "auz"],
+	"rules": {
+		// Additional, per-project rules...
+	}
 }
 ```
 
